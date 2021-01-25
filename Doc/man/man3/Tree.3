@@ -1,0 +1,57 @@
+.TH "Tree" 3 "Sat Oct 26 2019" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Tree
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Tree\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTree\fP ()"
+.br
+.ti -1c
+.RI "\fB~Tree\fP ()=default"
+.br
+.ti -1c
+.RI "const std::shared_ptr< \fBNode\fP > & \fBgetRoot\fP ()"
+.br
+.ti -1c
+.RI "void \fBinsert\fP (const std::shared_ptr< \fBNode\fP > &node)"
+.br
+.ti -1c
+.RI "void \fBinsert\fP (const std::shared_ptr< \fBNode\fP > &parent, const std::shared_ptr< \fBNode\fP > &node)"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBNode\fP > \fBsearch\fP ()"
+.br
+.ti -1c
+.RI "void \fBdeleteTree\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Tree::Tree ()"
+
+.SS "Tree::~Tree ()\fC [default]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Tree::deleteTree ()"
+
+.SS "const std::shared_ptr< \fBNode\fP > & Tree::getRoot ()"
+
+.SS "void Tree::insert (const std::shared_ptr< \fBNode\fP > & node)"
+
+.SS "void Tree::insert (const std::shared_ptr< \fBNode\fP > & parent, const std::shared_ptr< \fBNode\fP > & node)"
+
+.SS "std::shared_ptr< \fBNode\fP > Tree::search ()"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

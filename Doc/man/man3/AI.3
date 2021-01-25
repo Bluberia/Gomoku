@@ -1,0 +1,95 @@
+.TH "AI" 3 "Sat Oct 26 2019" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AI
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AI\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAI\fP ()"
+.br
+.ti -1c
+.RI "\fB~AI\fP ()"
+.br
+.ti -1c
+.RI "std::pair< int, std::pair< int, int > > \fBminimax\fP (std::shared_ptr< \fBNode\fP > node, int depth, bool isMaximizingPlayer)"
+.br
+.ti -1c
+.RI "void \fBsetBoard\fP (const \fBBoard\fP &)"
+.br
+.ti -1c
+.RI "void \fBevalNode\fP (const std::shared_ptr< \fBNode\fP > &node)"
+.br
+.ti -1c
+.RI "void \fBgeneratePossibilityTree\fP (\fBBoard\fP _board, int depth, const std::shared_ptr< \fBNode\fP > &node, bool player)"
+.br
+.ti -1c
+.RI "void \fBresetVal\fP ()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AI::AI ()"
+
+.SS "AI::~AI ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void AI::evalNode (const std::shared_ptr< \fBNode\fP > & node)"
+evalNode 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBNode\fP\fP evaluate the value of the move 
+.RE
+.PP
+
+.SS "void AI::generatePossibilityTree (\fBBoard\fP _board, int depth, const std::shared_ptr< \fBNode\fP > & node, bool player)"
+generatePossibilityTree 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBBoard\fP\fP : current game state 
+.br
+\fIdepth\fP : number of turn to generate 
+.br
+\fI\fBNode\fP\fP : root of the tree 
+.br
+\fIbool\fP : player in play 
+.RE
+.PP
+
+.SS "std::pair< int, std::pair< int, int > > AI::minimax (std::shared_ptr< \fBNode\fP > node, int depth, bool isMaximizingPlayer)"
+minimax 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBNode\fP\fP : current position in possibility tree 
+.br
+\fIdepth\fP : depth to search 
+.br
+\fIisMaximizingPlayer\fP : player turn find the best next move for the ai to play 
+.RE
+.PP
+
+.SS "void AI::resetVal ()"
+resetVal reset the value of current bestval 
+.SS "void AI::setBoard (const \fBBoard\fP & board)"
+setBoard 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBBoard\fP\fP : 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.

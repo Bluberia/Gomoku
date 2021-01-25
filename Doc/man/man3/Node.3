@@ -1,0 +1,107 @@
+.TH "Node" 3 "Sat Oct 26 2019" "Gomoku" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Node
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Tree\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNode\fP ()=default"
+.br
+.ti -1c
+.RI "\fB~Node\fP ()"
+.br
+.ti -1c
+.RI "\fBNode\fP (const std::shared_ptr< \fBNode\fP > &node)"
+.br
+.ti -1c
+.RI "\fBNode\fP (int value, std::pair< int, int > pos)"
+.br
+.ti -1c
+.RI "\fBNode\fP (int value, std::pair< int, int > pos, \fBBoard\fP board)"
+.br
+.ti -1c
+.RI "\fBNode\fP \fBoperator=\fP (const \fBNode\fP &node)"
+.br
+.ti -1c
+.RI "void \fBsetBoard\fP (const \fBBoard\fP &board)"
+.br
+.ti -1c
+.RI "void \fBsetValue\fP (int value)"
+.br
+.ti -1c
+.RI "void \fBsetPos\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBsetPos\fP (std::pair< int, int > pos)"
+.br
+.ti -1c
+.RI "void \fBsetChild\fP (const std::shared_ptr< \fBNode\fP > &child)"
+.br
+.ti -1c
+.RI "void \fBsetChildren\fP (const std::vector< std::shared_ptr< \fBNode\fP >> &children)"
+.br
+.ti -1c
+.RI "int \fBgetValue\fP () const"
+.br
+.ti -1c
+.RI "const \fBBoard\fP \fBgetBoard\fP () const"
+.br
+.ti -1c
+.RI "const std::pair< int, int > & \fBgetPos\fP () const"
+.br
+.ti -1c
+.RI "const std::vector< std::shared_ptr< \fBNode\fP > > & \fBgetChildren\fP () const"
+.br
+.ti -1c
+.RI "const std::shared_ptr< \fBNode\fP > & \fBgetNode\fP (size_t node) const"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Node::Node ()\fC [default]\fP"
+
+.SS "Node::~Node ()"
+
+.SS "Node::Node (const std::shared_ptr< \fBNode\fP > & node)"
+
+.SS "Node::Node (int value, std::pair< int, int > pos)"
+
+.SS "Node::Node (int value, std::pair< int, int > pos, \fBBoard\fP board)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBBoard\fP Node::getBoard () const"
+
+.SS "const std::vector< std::shared_ptr< \fBNode\fP > > & Node::getChildren () const"
+
+.SS "const std::shared_ptr< \fBNode\fP > & Node::getNode (size_t node) const"
+
+.SS "const std::pair< int, int > & Node::getPos () const"
+
+.SS "int Node::getValue () const"
+
+.SS "\fBNode\fP Node::operator= (const \fBNode\fP & node)"
+
+.SS "void Node::setBoard (const \fBBoard\fP & board)"
+
+.SS "void Node::setChild (const std::shared_ptr< \fBNode\fP > & child)"
+
+.SS "void Node::setChildren (const std::vector< std::shared_ptr< \fBNode\fP >> & children)"
+
+.SS "void Node::setPos (int x, int y)"
+
+.SS "void Node::setPos (std::pair< int, int > pos)"
+
+.SS "void Node::setValue (int value)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gomoku from the source code\&.
